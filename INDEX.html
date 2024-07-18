@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Reservation</title>
+    <!-- Add your CSS stylesheets and other dependencies here -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue;
+        }
+        h1{
+            background-color: aqua;
+            color: rgb(0, 34, 255);
+            text-align: center;
+        }
+        h2{
+            background-color: aqua;
+            color: rgb(0, 34, 255);
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        button{
+            background-color: darkblue;
+            color: rgb(255, 255, 255);
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ELECTRIC VEHICLE CHARGING AND PARKING SYSTEM</h1>
+    </header>
+
+    <section>
+        <h2>Book your Parking Slot</h2>
+        <!-- Add a form for users to book a parking slot -->
+        <form id="bookingForm" action="#" method="post" onsubmit="return confirmBooking()">
+            <!-- Include input fields for user details and preferences -->
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="vehicle-number"><b>Vehicle Number:</b></label>
+            <input type="text" id="vehicle-number" name="vehicle-number" required><br>
+
+            <label for="date"><b>Date:</b></label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time"><b>Time:</b></label>
+            <input type="time" id="time" name="time" required><br>
+
+            <p1><button type="submit">Book Now</button></p1>
+        </form>
+    </section>
+
+    <section id="confirmationSection" style="display: none;">
+        <h2>Booking Confirmation</h2>
+        <p>Your booking has been confirmed!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Parking Reservation System</p>
+    </footer>
+
+    <!-- Add your JavaScript scripts here if necessary -->
+    <script>
+        // Add your JavaScript functions here
+        function confirmBooking() {
+            // Display confirmation message
+            document.getElementById('confirmationSection').style.display = 'block';
+
+            // Prevent the form from submitting (for demo purposes)
+            return false;
+        }
+    </script>
+    <a href="file:///C:/Users/ADMIN/Documents/2.html"><button>NEXT</button></a>
+</body>
+</html>
